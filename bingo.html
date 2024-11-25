@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<style>
+			canvas{
+				border : 1px solid black;
+			}
+			.column {
+				float: left;
+				width: 33.33%;
+			}
+				
+			/* Clear floats after the columns */
+			.row:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+			
+			.score{
+				padding-right: calc(100% - 302px);
+			}
+		</style>
+		<script src="scores.js"></script>
+		<script src="bingo.js"></script>
+		<script>
+			function init(){
+				load_function_one();
+			}
+		</script>
+	</head>
+	
+	<body onload="init();">
+		<div class="row">
+			<div class="column"><canvas id="canv1" width=300 height=300></canvas><br><div class="score" id="score1"></div></div>
+			<div class="column"><canvas id="canv2" width=300 height=300></canvas><br><div class="score" id="score2"></div></div>
+			<div class="column"><canvas id="canv3" width=300 height=300></canvas><br><div class="score" id="score3"></div></div>
+		</div>
+		<div class="row">
+			<div class="column"><canvas id="canv4" width=300 height=300></canvas><br><div class="score" id="score4"></div></div>
+			<div class="column"><canvas id="canv5" width=300 height=300></canvas><br><div class="score" id="score5"></div></div>
+			<div class="column"><canvas id="canv6" width=300 height=300></canvas><br><div class="score" id="score6"></div></div>
+		</div>
+	</body>
+</html>
