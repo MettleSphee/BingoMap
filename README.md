@@ -6,4 +6,6 @@ I've thought that it's best to hardcode the values for drawing the lines for the
 
 These are meant to be used with a 5x5 bingo map acquired right on the following page: https://myfreebingocards.com/bingo-card-generator, by saving the preview (I've used the Notepad design).
 
+A live version is available at: https://mettlesphee.github.io/BingoMap/
+
 A modified version could allow for different sizes, images and customization.
